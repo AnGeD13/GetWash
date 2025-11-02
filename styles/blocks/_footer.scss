@@ -1,0 +1,26 @@
+.footer {
+  @include full-screen-width;
+  background-color: $color-dark;
+
+  &-container {
+    @include header-footer-container();
+    color: $color-light;
+  }
+
+  &__logo {
+    color: $color-light-grey;
+    @include logo-focus-state();
+  }
+
+  &__nav-list {
+    @include header-footer-nav();
+  }
+
+  &__nav-item {
+    @include nav-item-states($color-light);
+  }
+
+  &__button {
+    @include secondary-button(currentColor, rgba(114, 114, 126, 1), $color-dark, $color-light);
+  }
+}

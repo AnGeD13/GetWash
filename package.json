@@ -1,0 +1,15 @@
+{
+  "name": "get-wash",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "scripts": {
+    "sprite": "svg-sprite --symbol --symbol-dest=public/assets/sprites --symbol-sprite=icons.svg public/assets/icons/*.svg"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "svg-sprite": "^2.0.4"
+  }
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/css/main.css">
+  <link rel="icon" href="/public/favicon.svg" type="image/svg+xml" >
+  <title>GetWash</title>
+</head>
+<body>
+  <header class="header">
+    <h1 class="visually-hidden">Приложение для поиска и бронирования свободной автомойки</h1>
+    <div class="header-container">
+      <a href="/" class="header__logo" aria-label="Логотип">
+        <svg width="120" height="23">
+          <use href="/public/assets/sprites/icons.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li><a href="#start" class="header__nav-item">Как использовать</a></li>
+          <li><a href="#partner" class="header__nav-item">Партнерам</a></li>
+          <li><a href="#download" class="header__nav-item">Скачать</a></li>
+          <li><a href="#comments" class="header__nav-item">Отзывы</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="header__button">
+        Получить доступ
+      </button>
+    </div>
+  </header>
+
+
+  <main class="content">
+    <section class="welcome">
+      <div>
+        <h2 class="welcome__title">Поиск ближайшей свободной автомойки и бронирование
+          на удобное время.
+          <span>
+            <svg width="102" height="23">
+              <use href="/public/assets/sprites/icons.svg#arrow"></use>
+            </svg>
+          </span>
+        </h2>
+        <p class="welcome__description">
+          Мы поможем сохранить ваше время для более интересных занятий, чем стоять в очереди.
+        </p>
+        <button type="button" class="primary-btn">Получить доступ</button>
+      </div>
+      <div class="welcome__picture">
+        <img
+          alt=""
+          src="/public/assets/images/welcome.webp"
+          width="900"
+          height="744"
+        >
+      </div>
+    </section>
+
+    <section id="start" class="start">
+      <div>
+        <img 
+          class="start__image"
+          alt=""
+          src="/public/assets/images/start-phone.webp" 
+          width="350" 
+          height="675"
+        >
+      </div>
+      <div>
+        <h2 class="start__title">Быстрый старт:</h2>
+        <ol class="start__steps">
+          <li class="start__step">
+            <div class="grey-icon-wrapper">
+              <svg width="30" height="29">
+                <use href="/public/assets/sprites/icons.svg#start1"></use>
+              </svg>
+            </div>
+            <div>
+              <h3 class="start__step-title">Скачай и зарегистрируйся</h3>
+              <p class="start__step-description">Наше приложение доступно в Apple Store и Google Play</p>
+            </div>
+          </li>
+          <li class="start__step">
+            <div class="grey-icon-wrapper">
+              <svg width="30" height="29">
+                <use href="/public/assets/sprites/icons.svg#start2"></use>
+              </svg>
+            </div>
+            <div>
+              <h3 class="start__step-title">Выбери ближайшую автомойку</h3>
+              <p class="start__step-description">Из свободных поблизости или оставь заказ на удобное время</p>
+            </div>
+          </li>
+          <li class="start__step">
+            <div class="grey-icon-wrapper">
+              <svg width="30" height="29">
+                <use href="/public/assets/sprites/icons.svg#start3"></use>
+              </svg>
+            </div>
+            <div>
+              <h3 class="start__step-title">Выбери дополнительные услуги</h3>
+              <p class="start__step-description">Можешь их добавить к своему основному заказу</p>
+            </div>
+          </li>
+          <li class="start__step">
+            <div class="grey-icon-wrapper">
+              <svg width="30" height="29">
+                <use href="/public/assets/sprites/icons.svg#start4"></use>
+              </svg>
+            </div>
+            <div>
+              <h3 class="start__step-title">Оплати внутри приложения</h3>
+              <p class="start__step-description">Бесконтактная оплата внутри приложения и прозрачные цены</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="partner" class="partner">
+      <h2 class="partner__title">Стань нашим партнером и начни зарабатывать:</h2>
+      <p class="partner__description">Автоматизируй свой бизнес вместе с нами. Подключись к нашей системе бронирования, что бы получать новых клиентов и распределить нагрузку равномерно на весь день. Мы предоставляем удобные инструменты для формирования отчетов в несколько кликов и многое другое. 
+      </p>
+      <ul class="partner__cards">
+        <li class="partner__card">
+          <div class="grey-icon-wrapper">
+            <svg width="30" height="30">
+              <use href="/public/assets/sprites/icons.svg#partner1"></use>
+            </svg>
+          </div>
+          <p class="partner__card-description">Просмотривайте историю заказа</p>
+        </li>
+        <li class="partner__card">
+          <div class="grey-icon-wrapper">
+            <svg width="30" height="30">
+              <use href="/public/assets/sprites/icons.svg#partner2"></use>
+            </svg>
+          </div>
+          <p class="partner__card-description">Создание отчета неделя/месяц/год</p>
+        </li>
+        <li class="partner__card">
+          <div class="grey-icon-wrapper">
+            <svg width="29" height="30">
+              <use href="/public/assets/sprites/icons.svg#partner3"></use>
+            </svg>
+          </div>
+          <p class="partner__card-description">Обратная связь от клиентов</p>
+        </li>
+        <li class="partner__card">
+          <div class="grey-icon-wrapper">
+            <svg width="29" height="30">
+              <use href="/public/assets/sprites/icons.svg#partner4"></use>
+            </svg>
+          </div>
+          <p class="partner__card-description">Контроль качества работы сотрудников</p>
+        </li>
+        <li class="partner__card">
+          <div class="grey-icon-wrapper">
+            <svg width="29" height="30">
+              <use href="/public/assets/sprites/icons.svg#partner5"></use>
+            </svg>
+          </div>
+          <p class="partner__card-description">Бесконтактная оплата работы</p>
+        </li>
+      </ul>
+      <button type="button" class="primary-btn">Стать партнером</button>
+    </section>
+
+    <section id="download" class="download">
+      <div class="download__information">
+        <h2 class="download__title">Хватит тратить свое время в очередях</h2>
+        <p class="download__description">Приложение скоро будет доступно для бета тестирования в AppStore и Google Play</p>
+        <div class="download__links">
+          <a 
+            href="https://www.apple.com/app-store/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            aria-label="Загрузите в App Store"
+            class="download__link"
+          >
+            <svg width="138" height="40">
+              <use href="/public/assets/sprites/icons.svg#appstore"></use>
+            </svg>
+          </a>
+          <a 
+            href="https://play.google.com/store/app" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="Доступно в Google Play"
+            class="download__link"
+          >
+            <svg width="138" height="40">
+              <use href="/public/assets/sprites/icons.svg#playmarket"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="comments" class="comments">
+      <h2 class="comments__title">Отзывы о приложении</h2>
+      <p class="comments__description">Таким образом консультация с широким активом влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Разнообразный и богатый опыт сложившаяся структура организации обеспечивает широкому кругу (специалистов)
+        участие в формировании модели развития.
+      </p>
+      <div class="br"></div>
+
+      <div class="author">
+        <img class="author__avatar" alt="" src="/public/assets/images/author-avatar.webp" width="80" height="80">
+        <div>
+          <h3 class="author__name">John Doe</h3>
+          <h4 class="author__job">Водитель</h4>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button 
+          type="button" 
+          class="controls__left" 
+          aria-label="Перейти к предыдущему отзыву"
+        >
+          <svg width="20" height="20">
+            <use href="/public/assets/sprites/icons.svg#chevron"></use>
+          </svg>
+        </button>
+        <button 
+          type="button" 
+          class="controls__right"
+          aria-label="Перейти к следующему отзыву"
+        >
+          <svg width="20" height="20">
+            <use href="/public/assets/sprites/icons.svg#chevron"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <a href="/" class="footer__logo" aria-label="Логотип">
+        <svg width="120" height="23">
+          <use href="/public/assets/sprites/icons.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li><a href="#start" class="footer__nav-item">Как использовать</a></li>
+          <li><a href="#partner" class="footer__nav-item">Партнерам</a></li>
+          <li><a href="#download" class="footer__nav-item">Скачать</a></li>
+          <li><a href="#comments" class="footer__nav-item">Отзывы</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="footer__button">
+        Получить доступ
+      </button>
+    </div>
+  </footer>
+</body>
+</html>

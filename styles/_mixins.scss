@@ -1,0 +1,132 @@
+@mixin full-screen-width {
+  width: 100%;
+  min-width: 1440px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+@mixin primary-button {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: $color-light;
+  border-radius: 6px;
+  background-color: $color-primary;
+  padding: 18px 50px;
+  transition-duration: $transition-duration;
+
+  &:hover {
+    background-color: $color-primary-hover;
+  }
+
+  &:focus-visible {
+    background-color: $color-primary-hover;
+    outline-offset: 2px;
+    outline: 2px solid black;
+  }
+}
+
+@mixin secondary-button($color, $border-color, $color-active-state, $bg-active-state) {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+  background-color: transparent;
+  padding: 14px 25px;
+  border-radius: 6px;
+  border: 1px solid $border-color;
+  color: $color;
+  transition-duration: $transition-duration;
+
+  &:hover {
+    color: $color-active-state;
+    background-color: $bg-active-state;
+  }
+
+  &:focus-visible {
+    color: $color-active-state;
+    background-color: $bg-active-state;
+    border-color: $bg-active-state;
+    outline-offset: 2px;
+    outline: 2px solid $bg-active-state;
+  }
+}
+
+@mixin typography-h2($color: $color-dark) {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 140%;
+  color: $color;
+}
+
+@mixin grey-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: $color-light;
+  border-radius: 6px;
+}
+
+@mixin slider-control($color, $bg-color) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: $color;
+  background-color: $bg-color;
+  transition-duration: $transition-duration;
+
+  &:hover {
+    color: $bg-color;
+    background-color: $color;
+  }
+
+  &:focus-visible {
+    color: $bg-color;
+    background-color: $color;
+    outline-offset: 2px;
+    outline: 2px solid $color-dark;
+  }
+}
+
+@mixin header-footer-container {
+  width: 1440px;
+  display: grid;
+  grid-template-columns: 120px 1fr 175px;
+  align-items: center;
+  padding: 25px 135px;
+}
+
+@mixin header-footer-nav {
+  display: flex;
+  justify-content: center;
+  column-gap: 80px;
+}
+
+@mixin nav-item-states($color) {
+  transition-duration: $transition-duration;
+  border-radius: 6px;
+
+  &:hover {
+    color: $color;
+  }
+
+  &:focus-visible {
+    color: $color;
+    outline-offset: 2px;
+    outline: 2px solid $color;
+  }
+}
+
+@mixin logo-focus-state() {
+  border-radius: 6px;
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid currentColor; 
+  }
+}

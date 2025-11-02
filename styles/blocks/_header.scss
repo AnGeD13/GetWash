@@ -1,0 +1,29 @@
+.header {
+  position: relative;
+  z-index: 1;
+  @include full-screen-width;
+
+  &-container {
+    @include header-footer-container();
+    color: $color-main-text;
+    margin-bottom: 122px;
+  }
+
+  &__logo {
+    color: $color-primary;
+    @include logo-focus-state();
+    
+  }
+
+  &__nav-list {
+    @include header-footer-nav();
+  }
+
+  &__nav-item {
+    @include nav-item-states($color-dark);
+  }
+
+  &__button {
+    @include secondary-button($color-primary, $color-light-grey, $color-light-grey, $color-primary);
+  }
+}

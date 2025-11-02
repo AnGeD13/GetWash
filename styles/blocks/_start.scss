@@ -1,0 +1,67 @@
+.start {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  column-gap: 10px;
+  margin-inline: 135px;
+
+  &__title {
+    @include typography-h2();
+    margin-bottom: 52px;
+  }
+
+  &__steps {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+  }
+
+  &__step {
+    display: flex;
+    column-gap: 30px;
+
+    &-title {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 135%;
+      color: $color-dark;
+      margin-bottom: 8px;
+    }
+
+    &-description {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 135%;
+      color: $color-main-text;
+    }
+  }
+
+  &__image {
+    position: relative;
+    top: -47px;
+    left: -132px;
+    object-fit: cover;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -75px;
+    left: -125px;
+    width: 675px;
+    height: 675px;
+    z-index: 1;
+    background: radial-gradient(46.29% 46.29% at 50% 50%, rgba(255, 255, 255, 0.3) 89.58%, #FFFFFF 100%);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -75px;
+    left: -125px;
+    width: 675px;
+    height: 675px;
+    z-index: -1;
+    background-image: url('/public/assets/images/start-bg.webp');
+  }
+}

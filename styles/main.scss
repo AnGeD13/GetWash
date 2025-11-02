@@ -1,0 +1,35 @@
+@import 'reset';
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+@import 'utils';
+@import './blocks/header';
+@import './blocks/welcome';
+@import './blocks/start';
+@import './blocks/partner';
+@import './blocks/download';
+@import './blocks/comments';
+@import './blocks/footer';
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  scroll-behavior: smooth;
+}
+
+.content {
+  width: 1440px;
+  margin-inline: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.primary-btn {
+  @include primary-button();
+}
+
+.grey-icon-wrapper {
+  @include grey-icon-wrapper();
+}
