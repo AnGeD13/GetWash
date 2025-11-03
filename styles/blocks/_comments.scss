@@ -7,6 +7,29 @@
     margin-bottom: 17px;
   }
 
+  &__slider {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 382px;
+    overflow: hidden;
+  }
+
+  &__slide {
+    order: 2;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition-duration: 1s;
+
+    &--active {
+      order: 1;
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
   &__description {
     width: 70%;
     font-weight: 300;

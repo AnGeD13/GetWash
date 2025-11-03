@@ -10,11 +10,16 @@
 @import './blocks/download';
 @import './blocks/comments';
 @import './blocks/footer';
+@import './blocks/modal';
 
 :root {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   scroll-behavior: smooth;
+}
+
+.blocked {
+  overflow: hidden;
 }
 
 .content {

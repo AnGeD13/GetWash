@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="/styles/css/main.css">
   <link rel="icon" href="/public/favicon.svg" type="image/svg+xml" >
   <title>GetWash</title>
+  <script src="/scripts/slider.js" defer></script>
+  <script src="/scripts/modal.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -24,7 +26,7 @@
           <li><a href="#comments" class="header__nav-item">Отзывы</a></li>
         </ul>
       </nav>
-      <button type="button" class="header__button">
+      <button type="button" class="header__button js-button-access">
         Получить доступ
       </button>
     </div>
@@ -45,7 +47,7 @@
         <p class="welcome__description">
           Мы поможем сохранить ваше время для более интересных занятий, чем стоять в очереди.
         </p>
-        <button type="button" class="primary-btn">Получить доступ</button>
+        <button type="button" class="primary-btn js-button-access">Получить доступ</button>
       </div>
       <div class="welcome__picture">
         <img
@@ -164,7 +166,7 @@
           <p class="partner__card-description">Бесконтактная оплата работы</p>
         </li>
       </ul>
-      <button type="button" class="primary-btn">Стать партнером</button>
+      <button type="button" class="primary-btn js-button-access">Стать партнером</button>
     </section>
 
     <section id="download" class="download">
@@ -200,23 +202,79 @@
 
     <section id="comments" class="comments">
       <h2 class="comments__title">Отзывы о приложении</h2>
-      <p class="comments__description">Таким образом консультация с широким активом влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Разнообразный и богатый опыт сложившаяся структура организации обеспечивает широкому кругу (специалистов)
-        участие в формировании модели развития.
-      </p>
-      <div class="br"></div>
-
-      <div class="author">
-        <img class="author__avatar" alt="" src="/public/assets/images/author-avatar.webp" width="80" height="80">
-        <div>
-          <h3 class="author__name">John Doe</h3>
-          <h4 class="author__job">Водитель</h4>
-        </div>
+      <div class="comments__slider">
+        <article class="comments__slide comments__slide--active">
+          <p class="comments__description">Таким образом консультация с широким активом влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Разнообразный и богатый опыт сложившаяся структура организации обеспечивает широкому кругу (специалистов)
+            участие в формировании модели развития.
+          </p>
+          <div class="br"></div>
+          <div class="author">
+            <img class="author__avatar" alt="" src="/public/assets/images/author-avatar.webp" width="80" height="80">
+            <div>
+              <h3 class="author__name">John Doe - 1</h3>
+              <h4 class="author__job">Водитель</h4>
+            </div>
+          </div>
+        </article>
+        <article class="comments__slide">
+          <p class="comments__description">Таким образом консультация с широким активом влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Разнообразный и богатый опыт сложившаяся структура организации обеспечивает широкому кругу (специалистов)
+            участие в формировании модели развития.
+          </p>
+          <div class="br"></div>
+          <div class="author">
+            <img class="author__avatar" alt="" src="/public/assets/images/author-avatar.webp" width="80" height="80">
+            <div>
+              <h3 class="author__name">John Doe - 2</h3>
+              <h4 class="author__job">Водитель</h4>
+            </div>
+          </div>
+        </article>
+        <article class="comments__slide">
+          <p class="comments__description">Таким образом консультация с широким активом влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Разнообразный и богатый опыт сложившаяся структура организации обеспечивает широкому кругу (специалистов)
+            участие в формировании модели развития.
+          </p>
+          <div class="br"></div>
+          <div class="author">
+            <img class="author__avatar" alt="" src="/public/assets/images/author-avatar.webp" width="80" height="80">
+            <div>
+              <h3 class="author__name">John Doe - 3</h3>
+              <h4 class="author__job">Водитель</h4>
+            </div>
+          </div>
+        </article>
+        <article class="comments__slide">
+          <p class="comments__description">Таким образом консультация с широким активом влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Разнообразный и богатый опыт сложившаяся структура организации обеспечивает широкому кругу (специалистов)
+            участие в формировании модели развития.
+          </p>
+          <div class="br"></div>
+          <div class="author">
+            <img class="author__avatar" alt="" src="/public/assets/images/author-avatar.webp" width="80" height="80">
+            <div>
+              <h3 class="author__name">John Doe - 4</h3>
+              <h4 class="author__job">Водитель</h4>
+            </div>
+          </div>
+        </article>
+        <article class="comments__slide">
+          <p class="comments__description">Таким образом консультация с широким активом влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Разнообразный и богатый опыт сложившаяся структура организации обеспечивает широкому кругу (специалистов)
+            участие в формировании модели развития.
+          </p>
+          <div class="br"></div>
+    
+          <div class="author">
+            <img class="author__avatar" alt="" src="/public/assets/images/author-avatar.webp" width="80" height="80">
+            <div>
+              <h3 class="author__name">John Doe - 5</h3>
+              <h4 class="author__job">Водитель</h4>
+            </div>
+          </div>
+        </article>
       </div>
 
       <div class="controls">
         <button 
           type="button" 
-          class="controls__left" 
+          class="controls__left js-controls-prev" 
           aria-label="Перейти к предыдущему отзыву"
         >
           <svg width="20" height="20">
@@ -225,7 +283,7 @@
         </button>
         <button 
           type="button" 
-          class="controls__right"
+          class="controls__right js-controls-next"
           aria-label="Перейти к следующему отзыву"
         >
           <svg width="20" height="20">
@@ -253,10 +311,113 @@
           <li><a href="#comments" class="footer__nav-item">Отзывы</a></li>
         </ul>
       </nav>
-      <button type="button" class="footer__button">
+      <button type="button" class="footer__button js-button-access">
         Получить доступ
       </button>
     </div>
   </footer>
+
+  <div class="modal">
+    <form class="modal__content" novalidate>
+      <button  type="button" class="modal__close-btn js-close-modal" aria-label="Закрыть форму">
+        <svg width="24" height="24">
+          <use href="/public/assets/sprites/icons.svg#close"></use>
+        </svg>
+      </button>
+      <h2 class="modal__title">Стань нашим партнером и начни зарабатывать: </h2>
+      <fieldset class="modal__fields">
+        <legend class="visually-hidden">Данные о пользователе</legend>
+        <div class="modal__input-wrapper">
+          <span class="modal__input-icon">
+            <svg width="24" height="24">
+              <use href="/public/assets/sprites/icons.svg#input-name"></use>
+            </svg>
+          </span>
+          <label for="modal-name" class="visually-hidden">Введите ваше имя:</label>
+          <input 
+            id="modal-name" 
+            name="name"
+            type="text" 
+            class="modal__input-field"
+            placeholder="Введите имя"
+            required
+            >
+          <span class="modal__error" data-error="name"></span>  
+        </div>
+        <div class="modal__input-wrapper">
+          <span class="modal__input-icon">
+            <svg width="24" height="24">
+              <use href="/public/assets/sprites/icons.svg#input-email"></use>
+            </svg>
+          </span>
+          <label for="modal-email" class="visually-hidden">Введите адрес вашей электронной почты:</label>
+          <input 
+            id="modal-email" 
+            name="email"
+            type="email"
+            class="modal__input-field"
+            placeholder="E-mail"
+            required
+          >
+          <span class="modal__error" data-error="email"></span> 
+        </div>
+        <div class="modal__input-wrapper">
+          <span class="modal__input-icon">
+            <svg width="24" height="24">
+              <use href="/public/assets/sprites/icons.svg#input-tel"></use>
+            </svg>
+          </span>
+          <label for="modal-tel" class="visually-hidden">Введите ваш номер телефона:</label>
+          <input 
+            id="modal-tel" 
+            type="tel"
+            name="tel"
+            class="modal__input-field"
+            placeholder="Номер телефона"
+            required
+          >
+          <span class="modal__error" data-error="tel"></span> 
+        </div>
+      </fieldset>
+
+      <fieldset class="modal__consents">
+        <legend class="visually-hidden">
+          Согласие на обработку персональных данных
+        </legend>
+        <div>
+          <label for="modal-mail-list" class="modal__consents-label">
+            <input 
+              id="modal-mail-list" 
+              type="checkbox"
+              class="js-a11y-checkbox"
+            >
+            <span class="modal__consents-checkbox"></span>
+            Я хочу получать новости на почтовый адрес
+          </label>
+        </div>
+        <div class="modal__consents-item">
+          <label for="modal-consent-personal-data" class="modal__consents-label">
+            <input 
+              name="privacy" 
+              class="modal-consent-personal-data js-a11y-checkbox" 
+              id="modal-consent-personal-data" 
+              type="checkbox" 
+              required
+            >
+            <span class="modal__consents-checkbox"></span>
+            Я согласен учаcтвовать в сборе данных
+          </label>
+          <span class="modal__consents-item-error" data-error="privacy"></span>
+        </div>
+      </fieldset>
+      <button type="submit" class="primary-btn">Получить доступ</button>
+      <div class="modal__policy">
+        <p>
+          Нажимая кнопку, Вы принимаете 
+          <a href="/policy.txt" target="_blank" class="modal__policy-link">политику конфиденциальности</a>
+        </p>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
