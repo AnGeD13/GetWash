@@ -6,3 +6,4 @@
  - HTML
  - SCSS 
  - БЭМ
+ - JavaScript
